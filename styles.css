@@ -3,14 +3,72 @@
     padding: 0;
     box-sizing: border-box;
   }
-  body{
-    background-color: pink;
+  h1{
+    font-family: 'Bubblegum sans', serif;
+    font-size: 3rem;
+    text-align: center;
+    margin: 2rem 0;
+    
+    
   }
+  h2{
+    
+    font-family: Bubblegum sans, serif;
+    font-size: 2rem;
+    text-align: center;
+    margin: 5rem 0;
+  }
+  p{
+    font-family: Bubblegum sans, serif;
+    font-size: 1.5rem;
+    text-align: justify;
+    margin: 5rem 0;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    line-height: 2.5rem;
+  }
+  body{
+    background-color: lightslategray;
+  }
+#video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin: 20px auto;
+   border-radius: 20px;
+ 
+}
+
+#form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin: 20px auto;
+   gap: 1rem;
+}
+#email{
+    width: 350px;
+    height: 30px;
+}
+#submit{
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: black;
+    color: beige;
+    
+}
+
+
+
+
+
+
   #header-img{
     width: 150px;
     height: 20px;
      
-      margin-top: 20px;
+     
   }
   /*#nav-bar ul{
   display: flex;
@@ -20,34 +78,9 @@
     margin-left: 600px;
   
   }*/
- #header-img > img {
-
-    width: 100%;
-    height: 100%;
-    max-width: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-left: 20px;
-}
-nav > ul {
-    width: 35vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-left: 60%;
-  }
-  .nav-link{
-    list-style: none;
-    margin-right: 20px;
-    margin-top: -25px;
   
   
-  }
-  section{
-    background-color: white;
-  }
+  
   li a{
     text-decoration: none;
     list-style: none;
@@ -56,9 +89,10 @@ nav > ul {
   a:hover{
     cursor: pointer;
     color: rgb(39, 202, 202);
-   
-   
+   border-bottom: 2px solid;
+   line-height: 1.5rem;
   }
+  
   
   @media only screen and (min-width: 375px) and (max-width: 768px){
     body{
