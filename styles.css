@@ -28,7 +28,8 @@
     line-height: 2.5rem;
   }
   body{
-    background-color: lightslategray;
+    background-color: lightgray;
+    min-width: 375px;
   }
 #video{
     display: flex;
@@ -36,7 +37,13 @@
     align-items: center;
    margin: 20px auto;
    border-radius: 20px;
- 
+  
+}
+#nav-bar{
+    display: inline;
+}
+#home{
+    margin-top: 10rem;
 }
 
 #form{
@@ -58,11 +65,16 @@
     color: beige;
     
 }
+#submit:hover{
+    cursor: pointer;
+    background-color: transparent;
+    color: black;
+}
 
-
-
-
-
+footer{
+    text-align: center;
+    padding: 2rem;
+}
 
   #header-img{
     width: 150px;
@@ -70,16 +82,27 @@
      
      
   }
-  /*#nav-bar ul{
-  display: flex;
-    justify-content: center;
-    padding: 0;
-    align-items: flex-end;
-    margin-left: 600px;
   
-  }*/
+  #header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e197bc;
+    min-height: 70px;
+  }
   
-  
+  nav ul{
+    list-style-type: none;
+    display: flex;
+  }
+  .nav-link{
+    
+    justify-content: space-between;
+    margin-right: 30px;
+  }
   
   li a{
     text-decoration: none;
@@ -88,21 +111,42 @@
   }
   a:hover{
     cursor: pointer;
-    color: rgb(39, 202, 202);
+    color: rgb(38, 14, 57);
    border-bottom: 2px solid;
-   line-height: 1.5rem;
+   line-height: 1.2rem;
   }
   
   
-  @media only screen and (min-width: 375px) and (max-width: 768px){
+  @media only screen and (min-width: 375px) and (max-width: 1440px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+      }
+      #video{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       margin: 20px auto;
+       border-radius: 20px;
+       width: 350px;
+    }
     body{
-       
-       box-sizing: none;
-       
-    }
-    nav > ul {
-        width: 35vw;
-       
-    }
+        background-color: lightgray;
+        min-width: 375px;
+      }
+      
+      #header{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #e197bc;
+        min-height: 70px;
+      }
+      
 }
 
